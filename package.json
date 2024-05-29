@@ -1,0 +1,26 @@
+{
+  "name": "gbogie.com",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GavBog/gbogie-site.git"
+  },
+  "version": "0.1.0",
+  "author": "Gavin Bogie <me@gbogie.com> (https://www.gbogie.com/)",
+  "license": "GPL-3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "daisyui": "^4.11.1",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.11",
+    "vite-plugin-handlebars": "^2.0.0"
+  }
+}

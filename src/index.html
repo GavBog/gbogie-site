@@ -1,0 +1,14 @@
+<html>
+{{> head }}
+
+<body>
+  <header>{{> header }}</header>
+
+  {{#toJSON '["Home"]'}}
+  {{> breadcrumbs directories = this }}
+  {{/toJSON }}
+
+  <footer>{{> footer }}</footer>
+</body>
+
+</html>
