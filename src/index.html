@@ -2,11 +2,31 @@
 <html lang="en">
 {{>head}}
 
-<body>
-  <header>{{>header}}</header>
+<body class="min-h-screen">
+  {{>header}}
+
+  <div class="hero my-8 flex items-center justify-center">
+    <div class="hero-content flex-col lg:flex-row-reverse gap-12">
+      <div class="mockup-code rounded-lg w-full">
+        <pre data-prefix="$"><code>cargo run -p gbogie.com</code></pre>
+        <pre data-prefix=">" class="text-warning"><code>Compiling...</code></pre>
+        <pre data-prefix=">" class="text-success"><code>Done!</code></pre>
+      </div>
+      <div>
+        <h1 class="text-5xl font-bold">Hello, I'm Gavin Bogie</h1>
+        <p class="py-4 text-xl">I am a dedicated backend developer with a focus on crafting robust systems.
+          I specialize in <b>Distributed Systems</b>, <b>Cryptography</b>, and <b>Web Development</b>.
+          I also excel in utilizing languages such as <b>Rust</b>, <b>JavaScript</b>, <b>TypeScript</b>, and <b>Go</b>,
+          while also maintaining proficiency in languages like <b>Java</b>, <b>Python</b>, and <b>C</b>.</p>
+        <a href="/projects"><button class="btn btn-primary">Check out my Personal Projects!</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
 
   {{>breadcrumbs}}
-  <footer>{{>footer}}</footer>
+  {{>footer}}
 </body>
 
 </html>
