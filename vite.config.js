@@ -44,8 +44,8 @@ function transformMarkdown() {
       files.forEach((file) => {
         const fileName = file.replace(/.*\/(.*)\.md$/, '$1');
         const body = converter.makeHtml(fs.readFileSync(file, 'utf-8'));
-        const prepend = `<!DOCTYPE html><html lang="en">{{> head }}<body><header>{{> header }}</header>`;
-        const append = '{{> breadcrumbs }}<footer>{{> footer }}</footer></body></html>';
+        const prepend = `<!DOCTYPE html><html lang="en">{{>head}}<body class="min-h-screen">{{>header}}`;
+        const append = '{{>breadcrumbs}}{{>footer}}</body></html>';
         const preHtml = `${prepend}${body}${append}`;
         const data = pageData(file);
         const template = Handlebars.compile(preHtml);
