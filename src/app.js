@@ -1,8 +1,8 @@
-const theme = localStorage.getItem('theme') || 'black';
+const theme = localStorage.getItem('theme') || 'sunset';
 const themeToggle = document.getElementById('theme-toggle');
 
 switch (theme) {
-  case 'black':
+  case 'sunset':
     themeToggle.checked = false;
     break;
   case 'light':

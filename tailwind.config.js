@@ -7,12 +7,7 @@ export default {
   ],
   daisyui: {
     themes: [
-      {
-        black: {
-          ...require("daisyui/src/theming/themes")["black"],
-          "--rounded-btn": "0.5rem",
-        },
-      },
+      "sunset",
       "light",
     ],
   },

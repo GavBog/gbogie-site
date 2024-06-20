@@ -27,13 +27,6 @@ function pageData(file) {
   };
 }
 
-const partials = FastGlob.sync(resolve(__dirname, "src", "components", "**", "*.hbs"));
-for (const partial of partials) {
-  const partialName = partial.replace(/.*\/src\/components\/(.*)\.hbs/, '$1');
-  const partialContent = fs.readFileSync(partial, 'utf-8');
-  Handlebars.registerPartial(partialName, partialContent);
-}
-
 function transformMarkdown() {
   return {
     name: 'transform-markdown',
@@ -58,6 +51,13 @@ function transformMarkdown() {
       });
     }
   }
+}
+
+const partials = FastGlob.sync(resolve(__dirname, "src", "components", "**", "*.hbs"));
+for (const partial of partials) {
+  const partialName = partial.replace(/.*\/src\/components\/(.*)\.hbs/, '$1');
+  const partialContent = fs.readFileSync(partial, 'utf-8');
+  Handlebars.registerPartial(partialName, partialContent);
 }
 
 export default defineConfig({
