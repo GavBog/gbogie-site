@@ -1,24 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-{{>head}}
+---
+import Layout from '../layouts/Layout.astro'
+---
 
-<body class="min-h-screen">
-  {{>header}}
-
+<Layout title="Gavin Bogie">
   <div class="hero my-8 flex items-center justify-center">
     <div class="hero-content flex-col lg:flex-row-reverse gap-12">
       <div class="mockup-code rounded-lg w-full">
         <pre data-prefix="$"><code>cargo run -p gbogie.com</code></pre>
-        <pre data-prefix=">" class="text-warning"><code>Compiling...</code></pre>
+        <pre
+          data-prefix=">"
+          class="text-warning"><code>Compiling...</code></pre>
         <pre data-prefix=">" class="text-success"><code>Done!</code></pre>
       </div>
       <div>
         <h1 class="text-5xl font-bold">Hello, I'm Gavin Bogie</h1>
-        <p class="py-4 text-xl">I am a dedicated backend developer with a focus on crafting robust systems.
-          I specialize in <b>Distributed Systems</b>, <b>Cryptography</b>, and <b>Web Development</b>.
-          I also excel in utilizing languages such as <b>Rust</b>, <b>JavaScript</b>, <b>TypeScript</b>, and <b>Go</b>,
-          while also maintaining proficiency in languages like <b>Java</b>, <b>Python</b>, and <b>C</b>.</p>
-        <a href="/projects"><button class="btn btn-primary">Check out my Personal Projects!</button></a>
+        <p class="py-4 text-xl">
+          I am a dedicated backend developer with a focus on crafting robust
+          systems. I specialize in <b>Distributed Systems</b>, <b
+            >Cryptography</b
+          >, and <b>Web Development</b>. I also excel in utilizing languages
+          such as <b>Rust</b>, <b>JavaScript</b>, <b>TypeScript</b>, and <b
+            >Go</b
+          >, while also maintaining proficiency in languages like <b>Java</b>, <b
+            >Python</b
+          >, and <b>C</b>.
+        </p>
+        <a href="/projects"
+          ><button class="btn btn-primary"
+            >Check out my Personal Projects!</button
+          ></a
+        >
       </div>
     </div>
   </div>
@@ -29,27 +40,39 @@
     <div class="join join-vertical w-full gap-2 justify-center px-2">
       <div class="collapse collapse-plus border border-base-300">
         <input type="checkbox" checked />
-        <div class="collapse-title text-xl font-medium">
-          Notable Projects
-        </div>
+        <div class="collapse-title text-xl font-medium">Notable Projects</div>
         <div class="collapse-content">
           <div class="grid grid-cols-2 gap-4">
             <div class="card bordered">
               <div class="card-body">
                 <h2 class="card-title">FROSTore</h2>
-                <p class="text-lg">A Distributed Ed25519 Threshold Signature Database!</p>
-                <p class="text-lg">FROSTore is a tool to prevent your Private Key from being compromised and used to
-                  sign data without your permission.</p>
-                <a href="https://github.com/GavBog/FROSTore" class="btn btn-primary">Learn More</a>
+                <p class="text-lg">
+                  A Distributed Ed25519 Threshold Signature Database!
+                </p>
+                <p class="text-lg">
+                  FROSTore is a tool to prevent your Private Key from being
+                  compromised and used to sign data without your permission.
+                </p>
+                <a
+                  href="https://github.com/GavBog/FROSTore"
+                  class="btn btn-primary">Learn More</a
+                >
               </div>
             </div>
             <div class="card bordered">
               <div class="card-body">
                 <h2 class="card-title">SoftChorder (WIP)</h2>
-                <p class="text-lg">A Cross-Platform Software Chording Keyboard!</p>
-                <p class="text-lg">SoftChorder is a tool to increase your typing speed and efficiency by using Chords
-                  instead of individual key presses.</p>
-                <a href="https://github.com/GavBog/SoftChorder" class="btn btn-primary">Learn More</a>
+                <p class="text-lg">
+                  A Cross-Platform Software Chording Keyboard!
+                </p>
+                <p class="text-lg">
+                  SoftChorder is a tool to increase your typing speed and
+                  efficiency by using Chords instead of individual key presses.
+                </p>
+                <a
+                  href="https://github.com/GavBog/SoftChorder"
+                  class="btn btn-primary">Learn More</a
+                >
               </div>
             </div>
           </div>
@@ -113,7 +136,8 @@
                   <li>Git</li>
                   <li>Vim</li>
                   <li>Linux</li>
-                  <li>Vite</li>
+                  <li>Nix</li>
+                  <li>Cargo</li>
                   <li>Docker</li>
                 </ul>
               </div>
@@ -123,11 +147,10 @@
       </div>
       <div class="collapse collapse-plus border border-base-300">
         <input type="checkbox" />
-        <div class="collapse-title text-xl font-medium">
-          Career Positions
-        </div>
+        <div class="collapse-title text-xl font-medium">Career Positions</div>
         <div class="collapse-content">
-          <p class="text-lg">Want your business here?
+          <p class="text-lg">
+            Want your business here?
             <a href="mailto:me@gbogie.com" class="text-primary">Contact me!</a>
           </p>
         </div>
@@ -136,12 +159,20 @@
 
     <ul class="timeline timeline-vertical join-item justify-center w-full">
       <li class="h-1/5">
-        <div class="timeline-start timeline-box text-center">Beginning of my <br /> Programming Journey</div>
+        <div class="timeline-start timeline-box text-center">
+          Beginning of my <br /> Programming Journey
+        </div>
         <div class="timeline-middle">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-primary">
-            <path fill-rule="evenodd"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-5 h-5 text-primary"
+          >
+            <path
+              fill-rule="evenodd"
               d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clip-rule="evenodd" />
+              clip-rule="evenodd"></path>
           </svg>
         </div>
         <div class="timeline-end">2018</div>
@@ -151,23 +182,39 @@
         <hr class="bg-primary" />
         <div class="timeline-start">Jan. 2021</div>
         <div class="timeline-middle">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-primary">
-            <path fill-rule="evenodd"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-5 h-5 text-primary"
+          >
+            <path
+              fill-rule="evenodd"
               d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clip-rule="evenodd" />
+              clip-rule="evenodd"></path>
           </svg>
         </div>
-        <div class="timeline-end timeline-box text-center">First published program <br /> (CombatKeepInventory)</div>
+        <div class="timeline-end timeline-box text-center">
+          First published program <br /> (CombatKeepInventory)
+        </div>
         <hr class="bg-primary" />
       </li>
       <li class="h-1/5">
         <hr class="bg-primary" />
-        <div class="timeline-start timeline-box text-center">Released FROSTore </div>
+        <div class="timeline-start timeline-box text-center">
+          Released FROSTore
+        </div>
         <div class="timeline-middle">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-primary">
-            <path fill-rule="evenodd"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-5 h-5 text-primary"
+          >
+            <path
+              fill-rule="evenodd"
               d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clip-rule="evenodd" />
+              clip-rule="evenodd"></path>
           </svg>
         </div>
         <div class="timeline-end">Oct. 2023</div>
@@ -177,32 +224,43 @@
         <hr />
         <div class="timeline-start">Jun. 2025</div>
         <div class="timeline-middle">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-            <path fill-rule="evenodd"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              fill-rule="evenodd"
               d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clip-rule="evenodd" />
+              clip-rule="evenodd"></path>
           </svg>
         </div>
-        <div class="timeline-end timeline-box text-center">Highschool Graduation</div>
+        <div class="timeline-end timeline-box text-center">
+          Highschool Graduation
+        </div>
         <hr />
       </li>
       <li class="h-1/5">
         <hr />
-        <div class="timeline-start timeline-box text-center">Dev Employment</div>
+        <div class="timeline-start timeline-box text-center">
+          Dev Employment
+        </div>
         <div class="timeline-middle">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-            <path fill-rule="evenodd"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              fill-rule="evenodd"
               d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clip-rule="evenodd" />
+              clip-rule="evenodd"></path>
           </svg>
         </div>
         <div class="timeline-end">????</div>
       </li>
     </ul>
   </div>
-
-  {{>breadcrumbs}}
-  {{>footer}}
-</body>
-
-</html>
+</Layout>
