@@ -7,14 +7,15 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
+    "serve": "astro check && astro build && astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
-    "@astrojs/mdx": "^3.1.5",
+    "@astrojs/mdx": "^3.1.6",
     "@astrojs/tailwind": "^5.1.0",
     "@tailwindcss/typography": "^0.5.15",
-    "astro": "^4.15.4",
+    "astro": "^4.15.6",
     "daisyui": "^4.12.10",
     "tailwindcss": "^3.4.11",
     "typescript": "^5.6.2"

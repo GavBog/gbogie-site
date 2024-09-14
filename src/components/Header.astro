@@ -3,7 +3,12 @@
     <div class="navbar-start">
       <!-- Navigation dropdown  -->
       <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+        <div
+          tabindex="0"
+          role="button"
+          class="btn btn-ghost btn-circle"
+          aria-label="Navigation Dropdown"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-8 w-8"
@@ -19,12 +24,11 @@
           </svg>
         </div>
         <ul
-          tabindex="0"
           class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52"
         >
-          <li><a href="/">Homepage</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/about">About</a></li>
+          <li><a href="/" aria-label="Homepage">Homepage</a></li>
+          <li><a href="/blog" aria-label="Blog">Blog</a></li>
+          <li><a href="/about" aria-label="About Me">About</a></li>
         </ul>
       </div>
     </div>
@@ -37,6 +41,8 @@
       <label class="swap swap-rotate btn-ghost btn-circle">
         <!-- this hidden checkbox controls the state -->
         <input type="checkbox" class="theme-controller" value="light" />
+        <!-- visually hidden label -->
+        <span class="sr-only">Toggle theme</span>
         <!-- This is for theme persistence, theme switcher will still work without Javascript -->
         <script>
           function toggleTheme(button: HTMLInputElement) {
@@ -78,7 +84,12 @@
       </label>
       <!-- Notification dropdown -->
       <div class="dropdown dropdown-end mr-2">
-        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+        <div
+          tabindex="0"
+          role="button"
+          class="btn btn-ghost btn-circle"
+          aria-label="Notifications"
+        >
           <div class="indicator">
             <!-- Bell icon -->
             <svg
@@ -99,7 +110,6 @@
           </div>
         </div>
         <ul
-          tabindex="0"
           class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-96"
         >
           <div class="flex flex-col w-full gap-2 my-4">

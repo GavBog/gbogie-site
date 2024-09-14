@@ -39,7 +39,7 @@ import Layout from '../layouts/Layout.astro'
   <div class="join join-vertical lg:join-horizontal w-full gap-12 mb-4">
     <div class="join join-vertical w-full gap-2 justify-center px-2">
       <div class="collapse collapse-plus border border-base-300">
-        <input type="checkbox" checked />
+        <input type="checkbox" aria-label="Notable Projects Dropdown" checked />
         <div class="collapse-title text-xl font-medium">Notable Projects</div>
         <div class="collapse-content">
           <div class="grid grid-cols-2 gap-4">
@@ -55,7 +55,10 @@ import Layout from '../layouts/Layout.astro'
                 </p>
                 <a
                   href="https://github.com/GavBog/FROSTore"
-                  class="btn btn-primary">Learn More</a
+                  class="btn btn-primary"
+                  >Learn More <span class="sr-only"
+                    >About FROSTore on Github</span
+                  ></a
                 >
               </div>
             </div>
@@ -71,7 +74,10 @@ import Layout from '../layouts/Layout.astro'
                 </p>
                 <a
                   href="https://github.com/GavBog/SoftChorder"
-                  class="btn btn-primary">Learn More</a
+                  class="btn btn-primary"
+                  >Learn More <span class="sr-only"
+                    >About SoftChorder on Github</span
+                  ></a
                 >
               </div>
             </div>
@@ -79,7 +85,7 @@ import Layout from '../layouts/Layout.astro'
         </div>
       </div>
       <div class="collapse collapse-plus border border-base-300">
-        <input type="checkbox" />
+        <input type="checkbox" aria-label="Tools and Technologies Dropdown" />
         <div class="collapse-title text-xl font-medium">
           Tools and Technologies
         </div>
@@ -87,7 +93,7 @@ import Layout from '../layouts/Layout.astro'
           <div class="grid grid-cols-2 gap-4">
             <div class="card bordered">
               <div class="card-body">
-                <h2 class="card-title">Languages</h2>
+                <h2 class="card-title" aria-label="Languages">Languages</h2>
                 <ul class="list-disc list-inside">
                   <li>Rust</li>
                   <li>JavaScript</li>
@@ -103,7 +109,9 @@ import Layout from '../layouts/Layout.astro'
             </div>
             <div class="card bordered">
               <div class="card-body">
-                <h2 class="card-title">Technologies</h2>
+                <h2 class="card-title" aria-label="Technologies">
+                  Technologies
+                </h2>
                 <ul class="list-disc list-inside">
                   <li>Networking</li>
                   <li>Webassembly</li>
@@ -119,7 +127,7 @@ import Layout from '../layouts/Layout.astro'
             </div>
             <div class="card bordered">
               <div class="card-body">
-                <h2 class="card-title">Frameworks</h2>
+                <h2 class="card-title" aria-label="Frameworks">Frameworks</h2>
                 <ul class="list-disc list-inside">
                   <li>Axum</li>
                   <li>Tokio</li>
@@ -131,7 +139,7 @@ import Layout from '../layouts/Layout.astro'
             </div>
             <div class="card bordered">
               <div class="card-body">
-                <h2 class="card-title">Tools</h2>
+                <h2 class="card-title" aria-label="Tools">Tools</h2>
                 <ul class="list-disc list-inside">
                   <li>Git</li>
                   <li>Vim</li>
@@ -146,12 +154,19 @@ import Layout from '../layouts/Layout.astro'
         </div>
       </div>
       <div class="collapse collapse-plus border border-base-300">
-        <input type="checkbox" />
+        <input
+          type="checkbox"
+          aria-label="My Career Positions and Contact details Dropdown"
+        />
         <div class="collapse-title text-xl font-medium">Career Positions</div>
         <div class="collapse-content">
           <p class="text-lg">
             Want your business here?
-            <a href="mailto:me@gbogie.com" class="text-primary">Contact me!</a>
+            <a
+              href="mailto:me@gbogie.com"
+              class="text-primary"
+              aria-label="Contact Me">Contact me!</a
+            >
           </p>
         </div>
       </div>
